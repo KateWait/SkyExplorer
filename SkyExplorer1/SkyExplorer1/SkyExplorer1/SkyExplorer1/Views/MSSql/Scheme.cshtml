@@ -1,0 +1,164 @@
+﻿@{
+    ViewBag.Title = "Scheme";
+}
+@model DatabaseExplorer.ViewModels.HomeViewModel
+
+<script src="~/scripts/jquery-1.9.1.js"></script>
+
+<link href="~/Content/jquery.dataTables.yadcf.css" rel="stylesheet" />
+<script src="~/scripts/jquery.dataTables.yadcf.js"></script>
+@System.Web.Optimization.Scripts.Render("~/bundles/datatables")
+@System.Web.Optimization.Styles.Render("~/bundles/datatables/css")
+<h2>Scheme</h2>
+
+
+<script>
+    function getCurrentTable(tableName) {
+        var url = '@Url.Action("Select", "MSSql")';
+            var data = {
+                tableName: tableName,
+                connectionString: $('#con-string').val()
+            }
+
+            $.ajax({
+                type: "GET",
+                url: url,
+                data: data,
+                success: function (data) {
+                    $("#aditional-info").html(data);
+                },
+                contentType: "application/json; charset=utf-8",
+                traditional: true,
+                async: false
+            });
+    }
+
+    $(document).ready(function() {
+
+        $('#table').dataTable(); 
+    } );
+
+    function Hide3(){
+        $('#filters').toggle("slow");
+    }
+
+    $(document).ready(function () {
+     
+        var firstTable = $('#table').dataTable({
+            "bJQueryUI": true
+        }).yadcf([{
+            column_number: 0
+        }, {
+            column_number: 1,
+            filter_type: "range_number",
+            filter_container_id: "external_filter_container"
+        }, {
+            column_number: 2,
+            data: ["Yes", "No"],
+            filter_default_label: "Select Yes/No"
+        }, {
+            column_number: 3,
+            text_data_delimiter: ",",
+            enable_auto_complete: true
+        }, {
+            column_number: 4,
+            column_data_type: "html",
+            html_data_type: "text",
+            filter_default_label: "Select tag"
+        }]);
+ 
+        yadcf.exFilterColumn(firstTable, [[1, {from: 1, to: 40}], [3, "a_value"]]);
+ 
+        $('#table').dataTable({
+            "bJQueryUI": true
+        }).yadcf([{
+            column_number: 0,
+            filter_type: "range_number_slider",
+            ignore_char: ","
+        }, {
+            column_number: 2,
+            text_data_delimiter: ",",
+            enable_auto_complete: true,
+            filter_default_label: "Enter a value"
+        }, {
+            column_number: 3,
+            column_data_type: "html",
+            html_data_type: "text",
+            filter_default_label: "Choose label"
+        }]);
+ 
+ 
+        $('#table').dataTable({
+            "bJQueryUI": true
+        }).yadcf([{
+            column_number: 0
+        }, {
+            column_number: 1,
+            filter_default_label: "Pick some"
+        }, {
+            column_number: 2,
+            text_data_delimiter: ",",
+            enable_auto_complete: true
+        }]);
+ 
+    });
+
+    function SelectTop(){
+        var url = '@Url.Action("SelectTop", "MSSql")';
+        var data = {
+            top: $('#top').val(),
+            connectionString: $('#con-string').val(),
+            tableName: $('#table-sel').val()
+        }
+
+        $.ajax({
+            type: "GET",
+            url: url,
+            data: data,
+            success: function (data) {
+                $("#aditional-info").html(data);
+            },
+            contentType: "application/json; charset=utf-8",
+            traditional: true,
+            async: false
+        });
+    }
+</script>
+<div>
+
+    <div class="form-inline">
+        <label> <b> Using following ConnectionString: </b></label>
+        <input id="con-string" type="text" class="btn" value="@Model.ConnectionString" style="width: 700px;"/>
+    </div>
+
+    <div class="modal-header">
+        <h5>Tables in Selected Database</h5>
+    </div>
+    <table id="table" class="table table-striped table-bordered">
+        <tr>
+            @foreach (System.Data.DataColumn a in Model.Table.Columns)
+            {
+                <th><b>@a.ColumnName.ToString().ToLower().Replace("_", "  ")</b></th>
+            }
+            <th><b>Action</b></th>
+        </tr>
+        @foreach (System.Data.DataRow row in Model.Table.Rows)
+        {
+            <tr>
+                @foreach (System.Data.DataColumn col in Model.Table.Columns)
+                {
+                    <td>@row[@col]</td>
+                }
+                <td>
+                    <input type="button" value="Select" onclick="getCurrentTable('@row["TABLE_NAME"]')" />
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</div>
+
+
+<div id="aditional-info">
+</div>

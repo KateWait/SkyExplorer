@@ -1,0 +1,112 @@
+﻿
+<style type="text/css">
+    .margin {
+        float: right;
+        margin-right: 70%;
+    }
+</style>
+@model SkyExplorer1.Models.User
+@{
+    ViewBag.Title = "Registration";
+    Layout = "~/Views/Shared/_BootstrapLayout.basic.cshtml";
+}
+@using (Html.BeginForm("RegisterPrivateUser", "Registration", FormMethod.Post, new { id = "registrationForm" }))
+{
+    <header>
+        <hgroup>
+            <h3>Registration as <b>Private User</b></h3>
+        </hgroup>
+    </header>
+    <hr />
+    <div class="main-information col-lg-12">
+        <div class="alert alert-success" id="first-toogle">
+            <b>Main Information</b>
+        </div>
+            <br />
+            @Html.LabelFor(m => m.Name)
+            <div class="margin">
+                @Html.EditorFor(m => m.Name)
+            </div>
+            <br />
+            <br />
+            @Html.LabelFor(m => m.Surname)
+            <div class="margin">
+                @Html.EditorFor(m => m.Surname, new { Class = "margin" })
+            </div>
+            <br />
+        <br />
+        <hr />
+        <br />
+        <div class="alert alert-success" id="first-toogle">
+            <b>Main Data to LogIn</b>
+        </div>
+        <div class="Log-in">
+            @Html.LabelFor(m => m.Email)
+            <div class="margin">
+                @Html.EditorFor(m => m.Email, new { Class = "margin" })
+            </div>
+            <br/>
+            <br/>
+            @Html.LabelFor(m => m.Login)
+            <div class="margin">
+                @Html.EditorFor(m => m.Login, new { Class = "margin" })
+            </div>
+            <br/>
+            <br/>
+            @Html.LabelFor(m => m.Password)
+            <div class="margin">
+                @Html.EditorFor(m => m.Password, new { Class = "margin" })
+            </div>
+            <br/>
+            <br/>
+        </div>
+        <div class="alert alert-success" id="first-toogle">
+            <b>Personal Information</b>
+        </div>
+        <div class="personal-info">
+            <label for="CityName">Postal Code</label>
+            <div class="margin">
+                @Html.EditorFor(m => m.CityName, new { Class = "margin" })
+            </div>
+            <br />
+            <br />
+            <label for="PostalCode">Postal Code</label>
+            <div class="margin">
+                @Html.EditorFor(m => m.Password, new { Class = "margin" })
+            </div>
+            <br />
+            <br />
+            <label for="Street">Street</label>
+            <div class="margin">
+                @Html.EditorFor(m => m.Street, new { Class = "margin" })
+            </div>
+            <br />
+            <br />
+            <label for="HomeNumber">Home Number</label>
+            <div class="margin">
+                @Html.EditorFor(m => m.HomeNumber, new { Class = "margin" })
+            </div>
+            <br />
+            <br />
+            <label for="TelephoneNumber">Telephone Number</label>
+            <div class="margin">
+                @Html.EditorFor(m => m.TelephoneNumber, new { Class = "margin" })
+            </div>
+            <br />
+            <br />
+        </div>
+        <input type="submit" value="Register" class="btn btn-success" />
+        <input type="button" class="btn" value="Cancel"/>
+        </div>
+
+}
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script src="~/Scripts/jquery.validate.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+
+<script>
+    window.onload = function () {
+        $("#registrationForm").validate();
+        $("#registrationForm").removeAttr("novalidate");
+    };
+</script>

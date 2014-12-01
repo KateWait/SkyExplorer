@@ -1,0 +1,106 @@
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.csprojResolveAssemblyReference.cache
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.dll.config
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.pdb
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\Antlr3.Runtime.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\EntityFramework.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Infrastructure.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Mvc.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\Newtonsoft.Json.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Net.Http.Formatting.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.WebHost.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Mvc.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Optimization.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Providers.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Razor.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Deployment.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Razor.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\WebGrease.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\EntityFramework.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\Newtonsoft.Json.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Net.Http.Formatting.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.WebHost.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Mvc.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.Razor.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Deployment.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Razor.xml
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.dll
+G:\Życie\Magisterka\Semestr_I\Projekt Indywidualny\Projekt\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.pdb
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.dll.config
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.pdb
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Antlr3.Runtime.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\EntityFramework.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Mvc.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Newtonsoft.Json.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Net.Http.Formatting.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.WebHost.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Mvc.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Optimization.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Providers.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Razor.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Razor.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\WebGrease.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\EntityFramework.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Newtonsoft.Json.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Net.Http.Formatting.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.WebHost.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Mvc.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Razor.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Razor.xml
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.csprojResolveAssemblyReference.cache
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.dll
+C:\Users\SG0221138\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.pdb
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.dll.config
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\SkyExplorer1.pdb
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Antlr3.Runtime.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\EntityFramework.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Mvc.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Newtonsoft.Json.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Net.Http.Formatting.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.WebHost.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Mvc.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Optimization.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Providers.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Razor.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Razor.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\WebGrease.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\EntityFramework.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Newtonsoft.Json.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Net.Http.Formatting.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Http.WebHost.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Mvc.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.Razor.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\System.Web.WebPages.Razor.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.csprojResolveAssemblyReference.cache
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.pdb
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\EntityFramework.SqlServer.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\EntityFramework.SqlServer.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Datatables.Mvc.dll
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Datatables.Mvc.pdb
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\bin\Datatables.Mvc.xml
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.Migrations.New.resources
+C:\Users\Katarzyna\Desktop\SkyExplorer1\SkyExplorer1\SkyExplorer1\SkyExplorer1\obj\Debug\SkyExplorer1.csproj.GenerateResource.Cache

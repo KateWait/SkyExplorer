@@ -1,0 +1,175 @@
+﻿@{
+    ViewBag.Title = "MysqlConnection";
+}
+<link href="~/Content/App/ConnectionForm.css" rel="stylesheet" />
+
+<script src="~/Scripts/jquery-1.9.1.js"></script>
+<script>
+    $(document).ready(function () {
+        if ('@TempData["TestData"]' != "") {
+            $('#myModal').modal('show');
+        }
+    });
+    function Hide1() {
+        $('#to-hide1').toggle("slow");
+    };
+
+    function Hide2() {
+        $('#to-hide2').toggle("slow");
+    };
+
+    function SetDeafultValue() {
+        if ($('#default-port').attr('checked')) {
+            $('#port').attr("value", "3306");
+        } else {
+            $('#port').attr("value", "");
+        }
+    }
+
+    function submitForm(link) {
+        //string ServerName, string DatabaseName, string UserName, string Password, string PortNumber = "", string UseSSL = "", string ActivateSSL = ""
+        link = link.replace("server", $('#serverName').val());
+        link = link.replace("database", $('#databaseName').val());
+        link = link.replace("user", $('#userName').val());
+        link = link.replace("pass", $('#password').val());
+        link = link.replace("port", $('#port').val());
+        link = link.replace("true", $('#serverName').val());
+        link = link.replace("true2", $('#serverName').val());
+
+        var form = document.getElementById("MySql-form");
+        form.action = link;
+        form.submit();
+    }
+</script>
+
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Test Connection</h4>
+            </div>
+            <div class="modal-body">
+                @if (@TempData["TestData"] == "OK")
+                {
+                    <div class="alert alert-success">
+                        <b>
+                            All test passed!
+                            <br />
+                            Now You can Connect to Database or Save this Connection
+                        </b>
+                    </div>
+                }
+                else
+                {
+                    <div class="alert alert-danger">
+                        <b>
+                            There were some problems with creating new connection.
+                            <br />
+                            Please verify the problem below.
+                        </b>
+                        <br />
+                        @TempData["TestData"]
+                    </div>
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<form id="MySql-form" method="post" action="@Url.Action("GetScheme", "MySql")">
+<div style="border: 1px solid #E9EDF2; border-radius: 10px; padding: 2% 2% 2% 2%;">
+    <div class="modal-header" style="text-align: center; background-color: #F3F3F3; border-top-right-radius: 10px; border-top-left-radius: 10px; border-bottom-left-radius: 10px;" >
+        <h4>Define
+            <br />
+            New MySQL Connection!</h4>
+        <br />
+    </div>
+    <ul>
+        <li>
+            <div class="alert alert-info">
+                <b>Standard:</b>
+            </div>
+
+            <div class="form-inline" style="margin-left: 10%">
+                <div class="form-inline">
+                    <label style="margin-top: 2%">Server Name:</label>
+                    <a style="color: red;">*</a>
+                    <input type="text" id="serverName" required="required" class="margin" />
+                </div>
+                <br />
+                <div class="form-inline">
+                    <label>Database Name:</label>
+                    <a style="color: red;">*</a>
+                    <input type="text" id="databaseName" required="required" class="margin2" />
+                </div>
+
+                <br />
+                <div class="form-inline">
+                    <label>User Name:</label>
+                    <a style="color: red;">*</a>
+                    <input type="text" id="userName" required="required" class="margin2" />
+                </div>
+                <br />
+                <div class="form-inline">
+                    <label>Password:</label>
+                    <a style="color: red;">*</a>
+                    <input type="password" id="password" required="required" class="margin2" />
+                </div>
+            </div>
+        </li>
+        <br />
+        <br />
+        <li>
+            <div class="alert alert-info" id="first-toogle" onclick="Hide1()">
+                <b>With Specyfied TCP Port:</b>
+            </div>
+            <br />
+
+            <div id="to-hide1" class="form-inline" style="margin-left: 10%;">
+                <label>Port Number:</label>
+                <input type="text" id="port" class="margin2" />
+                <br /><br />
+                <input id="default-port" type="checkbox" style="margin-left: 30%;" onchange="SetDeafultValue()"/>
+                <label style="margin-left: 2%;">Use default TCP port</label>
+            </div>
+        </li>
+        <br />
+        <br />
+        <li>
+            <div class="alert alert-info" onclick="Hide2()">
+                <b>Using encryption: (Please choose only one option!)</b>
+            </div>
+            <br />
+
+            <div id="to-hide2" class="form-inline" style="margin-left: 10%;">
+                <label>Use of SSL if the server supports</label>
+                <input type="checkbox" style="margin-left: 2%"/>
+                <br />
+                <label>Activate SSL encryption.<i> The server must have a certyficate installed.</i></label>
+                <input type="checkbox" style="margin-left: 2%;"/>
+            </div>
+        </li>
+    </ul>
+
+    <br />
+    <hr />
+    <br />
+    <div class="form-inline">
+    <a style="color: red;">*</a> <label style="margin-left: 1%"><i>Fields are required to connect with any MySQL Database</i></label>
+        </div>
+    <hr />
+    <br />
+    <div class="modal-footer">
+        <input type="button" class="btn" value="Cancel" />
+        <input type="button" class="btn btn-primary" value="Test" onclick="submitForm('@Url.Action("TestConnection", "MySql", new { ServerName = "server", DatabaseName = "database", UserName = "user", Password = "pass", PortNumber = "port", UseSSL = "true", ActivateSSL = "true2" })    ')" />
+        <input type="button" class="btn btn-primary" value="Save" onclick="submitForm('@Url.Action("SaveConnection", "MySql", new {  ServerName = "server", DatabaseName = "database",UserName = "user",Password = "pass",PortNumber = "port",  UseSSL = "true", ActivateSSL = "true2"} )   ')" />
+        <input type="button" class="btn btn-primary" value="Connect" onclick="submitForm('@Url.Action("GetScheme", "MySql", new {  ServerName = "server", DatabaseName = "database",UserName = "user",Password = "pass",PortNumber = "port",  UseSSL = "true", ActivateSSL = "true2"} )   ')"/>
+    </div>
+</div>
+    </form>
+

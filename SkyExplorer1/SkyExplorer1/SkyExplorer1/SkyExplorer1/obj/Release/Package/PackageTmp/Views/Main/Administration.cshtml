@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Administration";
+}
+
+<div style="border: 1px solid #E9EDF2; border-radius: 10px; padding: 2% 2% 2% 2%;">
+    <div class="modal-sheader">
+        <h4>Welcome to Database Explorer 1.0.v</h4>
+        <h5>Try our possibilites via simple connection with below Databases!</h5>
+    </div>
+    <br />
+    <div id="to-view" class="form-inline modal-footer">
+        <input type="button" class="btn btn-primary" value="Connect to MySql Database" onclick="location.href='@Url.Action("Index","MySql")    '" style="width: 200px; height: 200px; margin-right: 20%;" />
+        <input type="button" class="btn btn-info" value="Connect to MSSQL Database" onclick="location.href='@Url.Action("Index","MSSql")    '" style="width: 200px; height: 200px;  margin-right: 20%;" " />
+        @*    <input type="button" value="Connect to SQLite Database" onclick="location.href='@Url.Action("Index", "SqLite")'" />*@
+    </div>
+</div>    

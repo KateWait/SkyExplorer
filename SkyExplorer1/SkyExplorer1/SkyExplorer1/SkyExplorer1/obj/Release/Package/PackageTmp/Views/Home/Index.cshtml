@@ -1,0 +1,381 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+<style type="text/css">
+    body {
+        font-family: 'relaway',sans-serif;
+        color: #8a8b8b;
+        font-size: 18px;
+        line-height: 22px;
+        background-color: #f2f3f7;
+        font-weight: normal;
+    }
+
+    #home-section {
+        width: auto;
+        height: 800px;
+    }
+
+    .to-right {
+        float: right;
+    }
+
+    .nav-container {
+        margin-top: 1%;
+        margin-bottom: 1%;
+        margin-left: 2%;
+    }
+
+    .set-style {
+        font-size: 12px;
+    }
+
+    .buttons {
+        width: 150px;
+    }
+
+    .script-position {
+        margin-top: 3%;
+        font-weight: normal;
+        color: #428BCA;
+        letter-spacing: 1pt;
+        word-spacing: -3pt;
+        font-size: 32px;
+        font-family: trebuchet MS, sans-serif;
+        line-height: 1;
+    }
+
+
+    .columns {
+        height: auto;
+        padding: 0px;
+        background-color: white;
+    }
+
+    .margin-columns {
+        margin-right: 120px;
+    }
+
+    .main-container {
+        margin-top: 3%;
+    }
+
+    .columns-script {
+        padding: 10px 2px 2px 2px;
+    }
+
+    .about-section {
+        background-color: white;
+        border-radius: 10px;
+        padding: 20px 0 20px 20px;
+    }
+
+    .about-nav {
+        float: right;
+    }
+
+    .nav-header {
+        background: #5BC4BE;
+        border-radius: 3px;
+        font-size: 13px;
+        color: white;
+        padding: 2px 4px;
+        display: inline-block;
+        line-height: 13px;
+        text-align: center;
+        position: relative;
+        top: -5px;
+    }
+
+    .program-style {
+        margin-right: 10px;
+        margin-top: 2%;
+        padding: 2px 2px 2px 2px;
+        float: left;
+    }
+
+    .nav-article {
+        margin-top: 10%;
+    }
+
+    #services-section {
+        margin-top: 5%;
+    }
+
+    body.modal-open #wrap {
+        -webkit-filter: blur(7px);
+        -moz-filter: blur(15px);
+        -o-filter: blur(15px);
+        -ms-filter: blur(15px);
+        filter: blur(15px);
+    }
+
+    .modal-backdrop {
+        background: #f7f7f7;
+    }
+
+    .registratin-modal {
+        margin-top: 20%;
+        background-color: white;
+        border-radius: 10px;
+    }
+</style>
+
+<div class="header-navigation">
+    <ul class="nav nav-justified">
+        <li><a href="#home-section">Home</a></li>
+        <li><a href="#about-section">About</a></li>
+        <li><a href="#services-section">Services</a></li>
+        <li><a href="#team-section">Team</a></li>
+        <li><a href="#contact-section">Contact</a></li>
+    </ul>
+</div>
+
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 text-center registratin-modal">
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">x</button>
+                </div>
+                <div>
+                    <header>
+                        <hgroup>
+                            <h3>Choose type of registration</h3>
+                        </hgroup>
+                    </header>
+                    <div class="row">
+                        <input type="button" class="btn btn-primary" value="Private User" onclick="window.location.href = '/Home/PrivateRegister'" />
+                        <input type="button" class="btn btn-primary" value="Company User" onclick="window.location.href = '/Home/CompanyRegister'" />
+                        <br/>
+                        <br/>
+                    
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<div id="home-section">
+    <div class="row nav-container">
+        <div class="col-md-2">
+            <img src="~/Content/app/img/Logos/iconmonstr-database-8-icon-256.png" width="100" height="100" />
+        </div>
+        <div class="col-md-4 script-position">
+            SkyExplorer
+        </div>
+        <div class="col-md-4 to-right">
+            <input type="button" value="Log in" class="btn btn-primary set-style buttons" onclick="window.location.href = '/Home/LogIn'"/>
+            <input type="button" value="Register" class="btn btn-primary buttons" data-toggle="modal" data-target="#myModal" />
+        </div>
+    </div>
+
+    <div class="row main-container">
+        <div class="col-md-3 columns margin-columns">
+            <div>
+                <img src="~/Content/app/img/main/happ_emplyes.jpg" width="293" height="300" />
+            </div>
+            <div class="columns-script">
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+            </div>
+        </div>
+
+        <div class="col-md-3 columns margin-columns">
+            <div>
+                <img src="~/Content/app/img/main/thumb_up.jpg" width="293" height="300" />
+            </div>
+            <div class="columns-script">
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+            </div>
+        </div>
+
+        <div class="col-md-3 columns">
+            <div>
+                <img src="~/Content/app/img/main/team_workin.jpg" width="293" height="300" />
+            </div>
+            <div class="columns-script">
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+                Explore different databases using one tool. Work alone or with another team memebers to achive more.
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div id="about-section">
+    <div class="row about-section">
+        <nav class="about-nav col-md-4">
+
+            <header>
+                <hgroup>
+                    <h4>Top Selling Products</h4>
+                </hgroup>
+            </header>
+
+            <article class="col-md-12">
+                <header class="nav-header">
+                    Private Premium
+                </header>
+                <div class="program-style">
+                    <img src="~/Content/app/img/services/low_cost_option.jpg" width="100" height="80" />
+                </div>
+                <div class="set-style">
+                    Connect to more databases as private user. See additional options.
+                </div>
+                <input type="button" class="btn nav-header" value="See more..." style="float: right; margin-top: 5px;" />
+            </article>
+
+            <article class="col-md-12 nav-article">
+                <header class="nav-header">
+                    Private Premium
+                </header>
+                <div class="program-style">
+                    <img src="~/Content/app/img/services/low_cost_option.jpg" width="100" height="80" />
+                </div>
+                <div class="set-style">
+                    Connect to more databases as private user. See additional options.
+                </div>
+                <input type="button" class="btn nav-header" value="See more..." style="float: right; margin-top: 5px;" />
+            </article>
+
+            <article class="col-md-12 nav-article">
+                <header class="nav-header">
+                    Private Premium
+                </header>
+                <div class="program-style">
+                    <img src="~/Content/app/img/services/low_cost_option.jpg" width="100" height="80" />
+                </div>
+                <div class="set-style">
+                    Connect to more databases as private user. See additional options.
+                </div>
+                <input type="button" class="btn nav-header" value="See more..." style="float: right; margin-top: 5px;" />
+            </article>
+        </nav>
+
+        <section class="col-md-8">
+            <header>
+                <hgroup>
+                    <h3>About SkyExplorer</h3>
+                </hgroup>
+            </header>
+
+            <article class="col-md-8">
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                dddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                ddddddddddddddddddddddddddddddddddddddddddddddd
+                ddddddddddddddddddddddddddddddddddddddddddddddd
+                ddddddddddddddddddddddddddddddddddddddddddddddd
+                ddddddddddddddddddddddddddddddddddddddddddddddd
+                ddddddddddddddddddddddddddddddddddddddddddddddd
+                ddddddddddddddddddddddddddddddddddddddddddddddd
+            </article>
+        </section>
+
+    </div>
+</div>
+
+<div id="services-section">
+    <div class="row about-section">
+        <header style="text-align: center">
+            <hgroup>
+                <h3>Avaliable Services</h3>
+            </hgroup>
+        </header>
+        
+        <div style="margin-left: 18%;">
+            <section class="col-md-6">
+                <input type="button" class="btn btn-primary" style="width: 250px; height: 80px;" value="Private User" />
+            </section>
+            <section class="col-md-6">
+                <input type="button" class="btn btn-primary" style="width: 250px; height: 80px;" value="Business User" />
+            </section>
+        </div>
+
+    </div>
+</div>
+
+<div id="team-section">
+    TEAM section
+</div>
+
+<div id="contact-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <small><i></i>Add alerts if form ok... success, else error.</i></small>
+                <div class="alert alert-success"><strong><span class="glyphicon glyphicon-send"></span> Success! Message sent. (If form ok!)</strong></div>
+                <div class="alert alert-danger"><span class="glyphicon glyphicon-alert"></span><strong> Error! Please check the inputs. (If form error!)</strong></div>
+            </div>
+            <form role="form" action="" method="post">
+                <div class="col-lg-6">
+                    <div class="well well-sm"><strong><i class="glyphicon glyphicon-ok form-control-feedback"></i> Required Field</strong></div>
+                    <div class="form-group">
+                        <label for="InputName">Your Name</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="InputName" id="InputName" placeholder="Enter Name" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputEmail">Your Email</label>
+                        <div class="input-group">
+                            <input type="email" class="form-control" id="InputEmail" name="InputEmail" placeholder="Enter Email" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputMessage">Message</label>
+                        <div class="input-group">
+                            <textarea name="InputMessage" id="InputMessage" class="form-control" rows="5" required></textarea>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="InputReal">What is 4+3? (Simple Spam Checker)</label>
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="InputReal" id="InputReal" required>
+                            <span class="input-group-addon"><i class="glyphicon glyphicon-ok form-control-feedback"></i></span>
+                        </div>
+                    </div>
+                    <input type="submit" name="submit" id="submit" value="Submit" class="btn btn-info pull-right">
+                </div>
+            </form>
+            <hr class="featurette-divider hidden-lg">
+            <div class="col-lg-5 col-md-push-1">
+                <address>
+                    <h3>Office Location</h3>
+                    <p class="lead">
+                        <a href="https://www.google.com/maps/preview?ie=UTF-8&q=The+Pentagon&fb=1&gl=us&hq=1400+Defense+Pentagon+Washington,+DC+20301-1400&cid=12647181945379443503&ei=qmYfU4H8LoL2oATa0IHIBg&ved=0CKwBEPwSMAo&safe=on">
+                            The Pentagon<br>
+                            Washington, DC 20301
+                        </a><br>
+                        Phone: XXX-XXX-XXXX<br>
+                        Fax: XXX-XXX-YYYY
+                    </p>
+                </address>
+            </div>
+        </div>
+
+    </div>
+</div>

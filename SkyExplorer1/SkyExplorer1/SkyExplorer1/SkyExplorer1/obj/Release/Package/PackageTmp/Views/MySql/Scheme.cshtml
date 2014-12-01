@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Scheme";
+}
+@model DatabaseExplorer.ViewModels.HomeViewModel
+
+<script src="~/scripts/jquery-1.9.1.js"></script>
+
+@System.Web.Optimization.Scripts.Render("~/bundles/datatables")
+@System.Web.Optimization.Styles.Render("~/bundles/datatables/css")
+<h2>Scheme</h2>
+
+
+<script>
+    function getCurrentTable(tableName) {
+        var url = '@Url.Action("Select", "MySql")';
+            var data = {
+                tableName: tableName,
+                connectionString: $('#con-string').val()
+            }
+
+            $.ajax({
+                type: "GET",
+                url: url,
+                data: data,
+                success: function (data) {
+                    $("#aditional-info").html(data);
+                },
+                contentType: "application/json; charset=utf-8",
+                traditional: true,
+                async: false
+            });
+    }
+
+    $(document).ready(function() {
+
+        $('#table').dataTable(); 
+    } );
+
+    function SelectTop(){
+        var url = '@Url.Action("SelectTop", "MSSql")';
+            var data = {
+                top: $('#top').val(),
+                connectionString: $('#con-string').val(),
+                tableName: $('#table-sel').val()
+            }
+
+            $.ajax({
+                type: "GET",
+                url: url,
+                data: data,
+                success: function (data) {
+                    $("#aditional-info").html(data);
+                },
+                contentType: "application/json; charset=utf-8",
+                traditional: true,
+                async: false
+            });
+    }
+
+    function Hide3(){
+        $('#filters').toggle("slow");
+    }
+</script>
+<div>
+
+    <div class="form-inline">
+        <label> <b> Using following ConnectionString: </b></label>
+        <input id="con-string" type="text" class="btn" value="@Model.ConnectionString" style="width: 500px;"/>
+    </div>
+
+    <div class="modal-header">
+        <h5>Tables in Selected Database</h5>
+    </div>
+    <table id="table" class="table table-striped table-bordered">
+        <tr>
+            @foreach (System.Data.DataColumn a in Model.Table.Columns)
+            {
+                <th><b>@a.ColumnName.ToString().ToLower().Replace("_", "  ")</b></th>
+            }
+            <th><b>Action</b></th>
+        </tr>
+        @foreach (System.Data.DataRow row in Model.Table.Rows)
+        {
+            <tr>
+                @foreach (System.Data.DataColumn col in Model.Table.Columns)
+                {
+                    <td>@row[@col]</td>
+                }
+                <td>
+                    <input type="button" value="Select" onclick="getCurrentTable('@row["TABLE_NAME"]')" />
+                </td>
+            </tr>
+        }
+
+
+    </table>
+</div>
+
+
+<div id="aditional-info">
+</div>

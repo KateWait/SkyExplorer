@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="SkyContext-Web.config Connection String" description="SkyContext Connection String used in web.config by the application to access the database." defaultValue="Server=tcp:z056ra9dg7.database.windows.net,1433;Database=SkyExplorer;User ID=KateWait@z056ra9dg7;Password=Lodowka1;Trusted_Connection=False;Encrypt=True;Connection Timeout=30;" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Katarzyna\\Desktop\\SkyExplorer1\\SkyExplorer1\\SkyExplorer1\\SkyExplorer1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SkyContext']/@connectionString" />
+  </parameter>
+  <parameter name="SkyContext_DatabasePublish-Web.config Connection String" description="SkyContext_DatabasePublish Connection String used in web.config by the application to access the database." defaultValue="SkyContext_DatabasePublish.ConnetionString" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\Katarzyna\\Desktop\\SkyExplorer1\\SkyExplorer1\\SkyExplorer1\\SkyExplorer1\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SkyContext_DatabasePublish']/@connectionString" />
+  </parameter>
+</parameters>
